@@ -1,0 +1,32 @@
+<html>
+    <body bgcolor=#ADD8E6>
+
+        <center>
+
+        <h1> <u>TEXT SUMMARIZATION </u></h1><br>
+        
+        <form action="{{url_for('komali')}}" method="POST" enctype="multipart/form-data">
+            <input type="file" name="filename" required><br><br>
+            <label>Enter No.of Lines:<input type="number" name ="a" placeholder="Summary in no.of Lines" required></label><br><br>
+            <label for="category">Choose The Category:</label>
+            <select name="cat" id="cat" required>
+              <option value="summary">Summary</option>
+              <option value="sentence_list">Sentence_List</option>
+              <option value="text">Text</option>
+              <option value="formatted_at">Formatted_T</option>
+              <option value="stopwords">Stopwords</option>
+              <option value="word_frequencies">Word_Frequencies</option>
+           </select>
+            <br><br>
+            <input type="submit" value="Upload">
+     
+     
+         </form>
+    </center>
+    <center>
+        <img src='static\kir.jpg' alt="text"><br><br>
+    <b><a href='/'><b>Go Back To Home Page</b></a>
+    </center>
+
+    </body>
+</html>
